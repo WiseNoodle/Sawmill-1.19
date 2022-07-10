@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "sawmill",
+  "version": "${version}",
+
+  "name": "Sawmill",
+  "description": "Adds a new block with the same functionality as the stoncutter but for wood.",
+  "authors": [
+    "WiseNoodle"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.wisenoodle.sawmill.Sawmill"
+    ],
+    "client": [
+      "net.wisenoodle.sawmill.SawmillClient"
+    ]
+  },
+  "mixins": [
+    "sawmill.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
